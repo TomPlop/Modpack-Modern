@@ -10,55 +10,31 @@
 		{
 			id: "2583D0B64E51FAC8"
 			linked_quest: "5063FDFFBE3E4855"
-			size: 0.75d
-			x: 7.875d
-			y: -5.25d
+			x: 2.5d
+			y: -7.5d
 		}
 		{
-			id: "6C3B2B8F8B6646EA"
-			linked_quest: "6DDDE2268B691F74"
-			shape: "square"
-			size: 0.75d
-			x: 0.0d
-			y: -3.0d
+			id: "308E11BE764398A1"
+			linked_quest: "7C1FD81C5DCFB74E"
+			x: -6.5d
+			y: -6.5d
 		}
 		{
-			id: "306AB6B6B81566DA"
-			linked_quest: "16A6AE5C770DB83A"
-			shape: "gear"
-			size: 1.2d
-			x: 2.25d
-			y: -1.875d
+			id: "197A1DD7E5E6EBE0"
+			linked_quest: "3E51DAA2E5CF0422"
+			shape: "octagon"
+			size: 2.0d
+			x: 13.0d
+			y: -6.0d
 		}
 	]
 	quests: [
-		{
-			dependencies: ["16A6AE5C770DB83A"]
-			description: [
-				"When your power generation allows for it, &3HV machines&r are well worth using for on-demand processing. The quadrupled energy cost compared to their &7LV&r counterparts shouldn't bother you too much."
-				""
-				"&9Note:&r Crafting Hulls in the &3Assembler&r is slightly more efficient. Prioritise this recipe!"
-			]
-			icon: "gtceu:hv_machine_casing"
-			id: "2D01E80DE837F6A6"
-			shape: "square"
-			size: 0.75d
-			tasks: [{
-				count: 6L
-				id: "09C7FB07CF7A1B49"
-				item: "gtceu:hv_machine_hull"
-				type: "item"
-			}]
-			title: "High Voltage Machines"
-			x: 1.125d
-			y: -1.875d
-		}
 		{
 			dependencies: ["0021051273D48936"]
 			description: ["&aEnergium Crystals&r store a significant amount of &9EU&r. They're also arguably cheaper."]
 			icon: "gtceu:energy_crystal"
 			id: "55552589C581EE9E"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Science-fiction batteries!"
 			tasks: [{
 				id: "35D2AE2899F60BC3"
@@ -66,14 +42,11 @@
 				type: "item"
 			}]
 			title: "Super Batteries"
-			x: 3.375d
-			y: -4.125d
+			x: -2.0d
+			y: -5.0d
 		}
 		{
-			dependencies: [
-				"26394C1290D70AB6"
-				"16A6AE5C770DB83A"
-			]
+			dependencies: ["52AD30F04DD5A812"]
 			description: [
 				"The &3HV Autoclave&r - despite being optional - is a machine you'll definitively want to grab."
 				""
@@ -81,19 +54,22 @@
 			]
 			icon: "gtceu:hv_autoclave"
 			id: "0021051273D48936"
-			shape: "rsquare"
-			size: 0.75d
+			shape: "square"
+			size: 1.0d
 			tasks: [{
 				id: "51F819B8083DC13A"
 				item: "gtceu:hv_autoclave"
 				type: "item"
 			}]
 			title: "HV Autoclave"
-			x: 3.375d
-			y: -3.0d
+			x: -2.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["16A6AE5C770DB83A"]
+			dependencies: [
+				"4024C831C77101CA"
+				"16E3465CF94E2BDD"
+			]
 			description: [
 				"The &3HV Chemical Bath&r is used to &ddye Lenses&r using &aChemical Dye&r. This will let you engrave more types of Wafers!"
 				""
@@ -101,7 +77,7 @@
 			]
 			icon: "gtceu:hv_chemical_bath"
 			id: "124B32A0583A636A"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Please don't bathe with electronics..."
 			tasks: [{
 				id: "13B0B5168E4B06E3"
@@ -109,33 +85,11 @@
 				type: "item"
 			}]
 			title: "High Voltage Bathing"
-			x: 4.5d
-			y: -1.875d
+			x: 3.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["26394C1290D70AB6"]
-			description: [
-				"If you're &lstill&r running off the &3Large Bronze Boiler&r, you may want to upgrade to the &3Large Steel Boiler&r."
-				""
-				"It's slightly more efficient than the &3LBB&r, and produces &d900 EU/t worth of Steam&r."
-				""
-				"We'd recommend you try other power options at this point."
-			]
-			icon: "gtceu:steel_large_boiler"
-			id: "1BB40CCF17D00719"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "3872B1D118426B33"
-				item: "gtceu:steel_large_boiler"
-				type: "item"
-			}]
-			title: "One Hundred Million Pressure Cookers"
-			x: 1.125d
-			y: -0.75d
-		}
-		{
-			dependencies: ["16A6AE5C770DB83A"]
+			dependencies: ["52AD30F04DD5A812"]
 			description: [
 				"You now have access to two &3new Maintenance Hatches&r. Both hatches &6do not require Maintenance&r when first placed in a Multiblock."
 				""
@@ -151,8 +105,8 @@
 			]
 			icon: "gtceu:configurable_maintenance_hatch"
 			id: "15645E46CC0E6764"
-			shape: "rsquare"
-			size: 0.66d
+			shape: "square"
+			size: 1.0d
 			tasks: [
 				{
 					id: "4BE8DFB45A1BFC09"
@@ -166,11 +120,11 @@
 				}
 			]
 			title: "Advanced Maintenance"
-			x: 1.125d
-			y: -3.0d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["16A6AE5C770DB83A"]
+			dependencies: ["52AD30F04DD5A812"]
 			description: [
 				"Just like &bMV&r, you'll need to make higher-tier components."
 				""
@@ -185,8 +139,7 @@
 			]
 			icon: "gtceu:hv_electric_motor"
 			id: "029CF0D9E5097F87"
-			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			tasks: [
 				{
 					id: "5B6D9DD390CC3184"
@@ -225,42 +178,24 @@
 				}
 			]
 			title: "We call this \"fun\""
-			x: 0.0d
-			y: -1.875d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"26394C1290D70AB6"
-				"16A6AE5C770DB83A"
-			]
+			dependencies: ["52AD30F04DD5A812"]
 			description: ["The &3HV Assembling Machine&r is the next step in progression, but also unlocks a handful of useful utilities - check around this quest for more."]
 			icon: "gtceu:hv_assembler"
 			id: "16B735F9C391D260"
-			size: 0.75d
+			shape: "octagon"
+			size: 2.0d
 			tasks: [{
 				id: "1B70E35262CA2CB8"
 				item: "gtceu:hv_assembler"
 				type: "item"
 			}]
 			title: "HV Assembling Machine"
-			x: 2.25d
-			y: -0.75d
-		}
-		{
-			dependencies: ["16B735F9C391D260"]
-			description: ["The &9Digital Interface Cover (DIC)&r is a visual Cover. It can show useful things like the status and progress of Machines, or the amount of fluids stored in a Super Tank."]
-			icon: "gtceu:digital_interface_cover"
-			id: "111877E2F16AD71C"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "505B2CDC455C36C5"
-				item: "gtceu:digital_interface_cover"
-				type: "item"
-			}]
-			title: "Digital Interface Cover"
-			x: 1.125d
-			y: 0.375d
+			x: 5.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["124B32A0583A636A"]
@@ -271,8 +206,7 @@
 			]
 			icon: "gtceu:cyan_glass_lens"
 			id: "6975F16F5B50F17F"
-			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			tasks: [
 				{
 					id: "73A16ED7BA7D64E8"
@@ -285,10 +219,20 @@
 					item: "gtceu:simple_soc"
 					type: "item"
 				}
+				{
+					id: "0A73E24102F7294F"
+					item: "gtceu:orange_glass_lens"
+					type: "item"
+				}
+				{
+					id: "07EBD328A78E8BE9"
+					item: "gtceu:lpic_chip"
+					type: "item"
+				}
 			]
 			title: "I see the world in colour"
-			x: 4.5d
-			y: 0.375d
+			x: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -298,43 +242,19 @@
 			description: ["&8ULV&r Circuits are used in some AE2 recipes, such as the &aAnnihilation Core&r and &aFormation Core&r."]
 			icon: "gtceu:nand_chip"
 			id: "15EC934CE8F4DC86"
-			size: 0.75d
+			size: 1.0d
 			tasks: [{
 				id: "6B595E3904B796C3"
 				item: "gtceu:nand_chip"
 				type: "item"
 			}]
 			title: "Best ULV Circuits!"
-			x: 4.5d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"6975F16F5B50F17F"
-				"16B735F9C391D260"
-			]
-			description: [
-				"&bDigital fluid storage&r is pretty cool. Each &b1k ME Fluid Storage Cell&r holds up to &d5 types&r of fluid, and can hold &6over 8,000 buckets&r of those 5 fluid types! That's more than a &3Super Tank 2&r!"
-				""
-				"You may want to &4format&r Fluid Storage Cells to certain types to prevent the network from clogging. Make a &3Cell Workbench&r to do so."
-			]
-			icon: "ae2:fluid_cell_housing"
-			id: "26E8E5C163340E5A"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "4717CD0721804BAC"
-				item: "ae2:fluid_cell_housing"
-				type: "item"
-			}]
-			title: "Digital Fluid Storage"
-			x: 3.375d
-			y: -0.75d
+			x: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
 				"3568BC9742092FC5"
-				"124B32A0583A636A"
 				"16B735F9C391D260"
 			]
 			description: [
@@ -346,7 +266,8 @@
 			]
 			icon: "gtceu:hv_energy_input_hatch"
 			id: "5DBBD9B1F5B01F4E"
-			size: 0.75d
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "Noticing a pattern here?"
 			tasks: [
 				{
@@ -367,14 +288,11 @@
 				}
 			]
 			title: "Upgrade your EBF II"
-			x: 4.5d
-			y: -0.75d
+			x: 2.5d
+			y: -6.0d
 		}
 		{
-			dependencies: [
-				"26394C1290D70AB6"
-				"16A6AE5C770DB83A"
-			]
+			dependencies: ["52AD30F04DD5A812"]
 			description: [
 				"The &3HV Chemical Reactor&r unlocks a ton of new recipes. Ah, who doesn't love the ever-growing demand on more advanced Chemistry?"
 				""
@@ -384,19 +302,18 @@
 			]
 			icon: "gtceu:hv_chemical_reactor"
 			id: "390E59F05132FCB8"
-			shape: "square"
-			size: 0.75d
+			shape: "octagon"
+			size: 2.0d
 			tasks: [{
 				id: "652CFAE1FA60F3E2"
 				item: "gtceu:hv_chemical_reactor"
 				type: "item"
 			}]
 			title: "High Voltage Chemistry"
-			x: 5.625d
-			y: -1.875d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["0EFEE489906256AA"]
 			description: [
 				"Titanium requires a slightly more &binvolved&r process than the previous materials to process. To get started, you'll need &aRutile&r, which can be obtained by processing &aBauxite&r."
 				""
@@ -410,26 +327,17 @@
 			]
 			icon: "gtceu:rutile_dust"
 			id: "59DFC4DA7D29C315"
-			shape: "rsquare"
-			size: 0.66d
+			shape: "square"
+			size: 1.0d
 			subtitle: "...means it WASN'T Titanium!"
-			tasks: [
-				{
-					count: 15L
-					id: "7046AD026C55153C"
-					item: "gtceu:bauxite_dust"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "5593109F3592A432"
-					item: "gtceu:rutile_dust"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5593109F3592A432"
+				item: "gtceu:rutile_dust"
+				type: "item"
+			}]
 			title: "Almost Titanium"
-			x: 5.625d
-			y: -3.0d
+			x: -5.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -446,15 +354,15 @@
 			]
 			icon: "gtceu:titanium_tetrachloride_bucket"
 			id: "727075AAF9F91FAE"
-			size: 0.75d
+			size: 1.0d
 			tasks: [{
 				id: "6B0E33342374C12E"
 				item: "gtceu:titanium_tetrachloride_bucket"
 				type: "item"
 			}]
 			title: "Almost Titanium²"
-			x: 5.625d
-			y: -4.125d
+			x: -4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6B08799BCFD01D3D"]
@@ -467,22 +375,18 @@
 			]
 			icon: "gtceu:mercury_barium_calcium_cuprate_double_wire"
 			id: "45F9AAE4ABE32033"
-			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			tasks: [{
 				id: "2C582DDA7BC36951"
 				item: "gtceu:mercury_barium_calcium_cuprate_single_wire"
 				type: "item"
 			}]
 			title: "HV Superconductors"
-			x: 4.5d
-			y: -4.125d
+			x: -6.5d
+			y: -9.0d
 		}
 		{
-			dependencies: [
-				"1C55AE6AD5BDE304"
-				"6958029B5514D4EC"
-			]
+			dependencies: ["7E755297E9685374"]
 			description: [
 				"&3Nichrome Heating Coils&r increase the temperature of your &3Blast Furnace&r to &d3,600K&r."
 				""
@@ -492,7 +396,7 @@
 			]
 			icon: "gtceu:nichrome_coil_block"
 			id: "6B08799BCFD01D3D"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "A long way to go before we beat the Sun"
 			tasks: [{
 				count: 16L
@@ -501,8 +405,8 @@
 				type: "item"
 			}]
 			title: "Nichrome Coils"
-			x: 4.5d
-			y: -5.25d
+			x: -6.5d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -520,51 +424,19 @@
 			]
 			icon: "gtceu:titanium_ingot"
 			id: "7FA0ACB7F161F378"
-			shape: "gear"
-			size: 1.2d
+			shape: "octagon"
+			size: 1.5d
 			tasks: [{
 				id: "6D3E269567F419DE"
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
 			title: "Titanium"
-			x: 5.625d
-			y: -5.25d
+			x: -4.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["6958029B5514D4EC"]
-			description: [
-				"&oThis is a guide on how to automatically route &lall&r&o your Hot Ingots to your Vacuum Freezer while keeping everything automated perfectly fine.&r"
-				""
-				"You already know the drill from the Chemical Bath, so let's get right to the chase."
-				"{@pagebreak}"
-				"Install an &aItem Tag Filter&r Cover on the &3Input Bus&r of your &3Vacuum Freezer&r, open it and set to whitelist &e&lingots/hot&r. The slot is to &dtest&r items to make sure you configured the Filter properly in case you forgot. Drag ingots from JEI!"
-				""
-				"From here, you now have the option to route either with &9Item Pipes&r or &9AE2&r."
-				"{@pagebreak}"
-				"&2With Item Pipes&r, connect the output of your &3EBF(s)&r to the input of your &3Vacuum Freezer&r and the output dump (Chest, Crate, or ME Interface)."
-				"You can also have a &dRestrictive Pipe&r in front of the output dump to ensure the Vacuum Freezer will be prioritized."
-				""
-				"&2With AE2&r, place a &3ME Storage Bus&r on top of your Cover and set to very &dhigh priority&r. Any hot ingots entering your ME system will automatically be moved into the Vacuum Freezer."
-				"{@pagebreak}"
-				"&l&9Note:&r If you wish to know more tags for future automation setups, they will display if you press Shift when hovering over an item. For instance, an item tagged with &e&o#forge:plates/copper&r would be filtered as &e&lplates/copper&r."
-				""
-				"&9Other Note:&r The Item Tag Filter partially supports &dregex&r. Hover over the info icon for more information."
-			]
-			icon: "gtceu:item_tag_filter"
-			id: "717099CE2CB9A0ED"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "497959F0CC572A68"
-				item: "gtceu:item_tag_filter"
-				type: "item"
-			}]
-			title: "300IQ"
-			x: 3.375d
-			y: -5.25d
-		}
-		{
+			dependencies: ["6A451F43F3D7A671"]
 			description: [
 				"The &3Vacuum Freezer&r is a multiblock used to cool down &eHot Ingots&r. All ingots made in the EBF with a temperature above &d1750K&r will need it."
 				""
@@ -574,7 +446,8 @@
 			]
 			icon: "gtceu:vacuum_freezer"
 			id: "6958029B5514D4EC"
-			size: 0.75d
+			shape: "gear"
+			size: 3.0d
 			subtitle: "Did you know vacuums actually make things hotter?"
 			tasks: [{
 				id: "784C1A8A77AD314E"
@@ -582,8 +455,8 @@
 				type: "item"
 			}]
 			title: "Ice Cold"
-			x: 6.75d
-			y: -5.25d
+			x: -4.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -593,16 +466,16 @@
 			description: ["&a4A&r of &bMV&r energy transmission may be appealing, but you probably don't need these at this point. The option is always there if you need it."]
 			icon: "gtceu:magnesium_diboride_double_wire"
 			id: "72F0DFAF5CC6D0FE"
-			shape: "rsquare"
-			size: 0.66d
+			shape: "square"
+			size: 1.0d
 			tasks: [{
 				id: "4CCBDA5AC16CBB48"
 				item: "gtceu:magnesium_diboride_single_wire"
 				type: "item"
 			}]
 			title: "MV Superconductors"
-			x: 6.75d
-			y: -4.125d
+			x: -6.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["41D32C5178760F47"]
@@ -613,33 +486,30 @@
 			]
 			icon: "gtceu:hv_circuit_assembler"
 			id: "6B1595678ECB7AC8"
-			size: 0.75d
+			shape: "gear"
+			size: 3.0d
 			tasks: [{
 				id: "337D8EF42A7BD3A2"
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
 			title: "HV Circuit Assembler"
-			x: 7.875d
-			y: -3.0d
+			x: 10.0d
+			y: 2.0d
 		}
 		{
-			dependencies: [
-				"124B32A0583A636A"
-				"16E3465CF94E2BDD"
-				"4024C831C77101CA"
-			]
+			dependencies: ["124B32A0583A636A"]
 			icon: "minecraft:ender_eye"
 			id: "41D32C5178760F47"
-			size: 0.75d
+			size: 1.0d
 			tasks: [{
-				count: 12L
 				id: "30A89DD2A22EE314"
 				item: "minecraft:ender_eye"
 				type: "item"
 			}]
-			x: 7.875d
-			y: -1.875d
+			title: "The Eye of the Gregtech"
+			x: 6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6A451F43F3D7A671"]
@@ -652,15 +522,16 @@
 			]
 			icon: "gtceu:micro_processor_mainframe"
 			id: "14D277A164202FF8"
-			size: 0.75d
+			shape: "gear"
+			size: 3.0d
 			tasks: [{
 				id: "71E3128BA0CAC113"
 				item: "gtceu:micro_processor_mainframe"
 				type: "item"
 			}]
 			title: "Mainframes - first IV Circuits!"
-			x: 9.0d
-			y: -4.125d
+			x: 0.0d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -684,8 +555,8 @@
 			]
 			icon: "gtceu:cleanroom"
 			id: "3568BC9742092FC5"
-			shape: "gear"
-			size: 1.5d
+			shape: "octagon"
+			size: 2.0d
 			subtitle: "They put me in a room... a clean room"
 			tasks: [
 				{
@@ -713,8 +584,8 @@
 				}
 			]
 			title: "The Cleanroom"
-			x: 6.75d
-			y: -3.0d
+			x: 0.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["41D32C5178760F47"]
@@ -731,16 +602,15 @@
 			]
 			icon: "gtceu:prospector.hv"
 			id: "2124BF15006733D5"
-			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			tasks: [{
 				id: "1ED12D379EEE0CBA"
 				item: "gtceu:prospector.hv"
 				type: "item"
 			}]
 			title: "HV Prospector"
-			x: 9.0d
-			y: -1.875d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0EFEE489906256AA"]
@@ -751,16 +621,15 @@
 			]
 			icon: "gtceu:fluorine_bucket"
 			id: "42FB276AB16258D9"
-			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			tasks: [{
 				id: "344000CF4AAC68AF"
 				item: "gtceu:fluorine_bucket"
 				type: "item"
 			}]
 			title: "Fluorine"
-			x: 5.625d
-			y: -0.75d
+			x: 1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -778,7 +647,7 @@
 			]
 			icon: "gtceu:polytetrafluoroethylene_plate"
 			id: "7CC79617A4965F25"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "A.K.A - Teflon"
 			tasks: [
 				{
@@ -798,27 +667,27 @@
 				}
 			]
 			title: "Polytetrafluoroethylene"
-			x: 5.625d
-			y: 0.375d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["04F6E968CEEC3D49"]
+			dependencies: ["5BACED5AE350EAB1"]
 			description: [
 				"Making &aNitrobenzene&r will boost the energy efficiency of &aBenzene&r roughly &6fourfold&r. You love to see it."
 				""
 				"The catch here is that it takes &dDistilled Water&r, and consumes a bit of &dSulfur&r with every step."
 			]
 			id: "56E7A3A0CC690C8A"
-			shape: "rsquare"
-			size: 0.66d
+			shape: "square"
+			size: 1.0d
 			tasks: [{
 				id: "33CF24B0A19D2F25"
 				item: "gtceu:nitrobenzene_bucket"
 				type: "item"
 			}]
 			title: "Benzene Nitro"
-			x: 9.0d
-			y: 1.5d
+			x: -1.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["7CC79617A4965F25"]
@@ -850,7 +719,7 @@
 			icon: "gtceu:large_chemical_reactor"
 			id: "528CE69DA4358B2E"
 			shape: "gear"
-			size: 1.3d
+			size: 3.0d
 			tasks: [
 				{
 					id: "4738F666E22B212B"
@@ -870,8 +739,8 @@
 				}
 			]
 			title: "Large Chemical Reactor"
-			x: 5.625d
-			y: 1.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -893,7 +762,7 @@
 			]
 			icon: "minecraft:tnt"
 			id: "2B7B214EDE0B45A2"
-			size: 0.75d
+			size: 1.0d
 			tasks: [
 				{
 					id: "1CB85F57BA45252D"
@@ -912,8 +781,8 @@
 				}
 			]
 			title: "TNT"
-			x: 7.875d
-			y: 0.375d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["390E59F05132FCB8"]
@@ -924,7 +793,7 @@
 			]
 			icon: "minecraft:blaze_powder"
 			id: "16E3465CF94E2BDD"
-			size: 0.75d
+			size: 1.0d
 			tasks: [{
 				count: 12L
 				id: "00CC416ACB6CA99F"
@@ -932,8 +801,8 @@
 				type: "item"
 			}]
 			title: "Blaze Powder"
-			x: 6.75d
-			y: -1.875d
+			x: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -949,7 +818,7 @@
 			]
 			icon: "minecraft:ender_pearl"
 			id: "4024C831C77101CA"
-			size: 0.75d
+			size: 1.0d
 			tasks: [
 				{
 					id: "3DC62CA60F006A06"
@@ -964,8 +833,8 @@
 				}
 			]
 			title: "Ender Pearls"
-			x: 7.875d
-			y: -0.75d
+			x: 2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3568BC9742092FC5"]
@@ -980,7 +849,7 @@
 			]
 			icon: "gtceu:phosphorus_boule"
 			id: "017019EB38F7A18C"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "That's dope, bro!"
 			tasks: [
 				{
@@ -995,11 +864,10 @@
 				}
 			]
 			title: "Phosphorus Boules"
-			x: 9.0d
-			y: -3.0d
+			x: -2.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["26394C1290D70AB6"]
 			description: [
 				"The &3Implosion Compressor&r turns the Dust form of Gems into their Gem form."
 				""
@@ -1009,15 +877,15 @@
 			]
 			icon: "gtceu:implosion_compressor"
 			id: "1137D2BA7E03D685"
-			size: 0.75d
+			size: 1.0d
 			tasks: [{
 				id: "52E617BBF3718471"
 				item: "gtceu:implosion_compressor"
 				type: "item"
 			}]
 			title: "Implosion Compressor"
-			x: 9.0d
-			y: -0.75d
+			x: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1045,7 +913,7 @@
 			]
 			icon: "gtceu:nitric_acid_bucket"
 			id: "5BACED5AE350EAB1"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "This won't eat your skin"
 			tasks: [{
 				id: "5F8F684990622DE1"
@@ -1053,8 +921,8 @@
 				type: "item"
 			}]
 			title: "Nitric Acid"
-			x: 6.75d
-			y: 1.5d
+			x: 0.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["5BACED5AE350EAB1"]
@@ -1064,8 +932,8 @@
 				"The catch comes in the complexity of making &dTNM&r. In order to concoct it, you must react &aNitric Acid&r with either &dEthenone&r or &aMethyl Acetate&r, both of which have quite an involved process themselves!"
 			]
 			id: "04F6E968CEEC3D49"
-			shape: "rsquare"
-			size: 0.66d
+			shape: "square"
+			size: 1.0d
 			subtitle: "This is to go further beyond"
 			tasks: [{
 				id: "51D904AA29256F8D"
@@ -1073,8 +941,8 @@
 				type: "item"
 			}]
 			title: "Cetane-boosted Diesel"
-			x: 7.875d
-			y: 1.5d
+			x: 1.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["16B735F9C391D260"]
@@ -1087,7 +955,7 @@
 			]
 			icon: "gtceu:smd_transistor"
 			id: "4C3805F75C9EE3DD"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Alternate components!"
 			tasks: [
 				{
@@ -1107,8 +975,8 @@
 				}
 			]
 			title: "SMD Components"
-			x: 3.375d
-			y: 0.375d
+			x: 8.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["4C3805F75C9EE3DD"]
@@ -1119,7 +987,7 @@
 			]
 			icon: "gtceu:smd_capacitor"
 			id: "7F272A099E65F848"
-			size: 0.75d
+			size: 1.0d
 			tasks: [
 				{
 					id: "75955EC3248DEA7A"
@@ -1133,14 +1001,11 @@
 				}
 			]
 			title: "More SMD Components"
-			x: 3.375d
-			y: 1.5d
+			x: 9.5d
+			y: -6.0d
 		}
 		{
-			dependencies: [
-				"26394C1290D70AB6"
-				"16A6AE5C770DB83A"
-			]
+			dependencies: ["52AD30F04DD5A812"]
 			description: [
 				"The &3HV Macerator&r finally unlocks more of the slots shown in JEI. With this, the first &9three&r slots are now available. This allows you to receive the &6unique ore Byproduct&r from macerating &dThermal &dCentrifuged Ore&r."
 				""
@@ -1151,7 +1016,8 @@
 				"&l&3Lore:&r&o In GregTech 5u, the &6HV&r&o Macerator only gave two slots. Urgh... we weren't planning on using that Stone Dust, anyway..."
 			]
 			id: "6B7762F672BAE76F"
-			size: 0.75d
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "Shredding your Ores with byproducts"
 			tasks: [{
 				id: "76DAF1C1B90EFE87"
@@ -1159,8 +1025,8 @@
 				type: "item"
 			}]
 			title: "Universal Macerator"
-			x: -1.125d
-			y: -1.875d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1181,78 +1047,29 @@
 			]
 			icon: "gtceu:ammonia_bucket"
 			id: "4343746E706264E6"
-			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			tasks: [{
 				id: "1C3EBA2535471DB6"
 				item: "gtceu:ammonia_bucket"
 				type: "item"
 			}]
 			title: "Ammonia"
-			x: 6.75d
-			y: -0.75d
+			x: -3.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["16A6AE5C770DB83A"]
-			id: "1D88369409736DC7"
-			size: 0.75d
-			tasks: [{
-				id: "722AEA3607BBAC94"
-				item: "gtceu:hv_polarizer"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["7FA0ACB7F161F378"]
-			id: "2F5778EDE6426D7E"
-			shape: "circle"
-			size: 0.8d
-			tasks: [{
-				id: "1BCFD5295BE92C4E"
-				item: {
-					Count: 1
-					id: "minecraft:elytra"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 5.625d
-			y: -6.5d
-		}
-		{
-			dependencies: ["2F5778EDE6426D7E"]
-			id: "2045D32219AA0DCC"
-			shape: "circle"
-			size: 0.9d
-			tasks: [{
-				id: "3785469E7628386A"
-				item: {
-					Count: 1
-					id: "hangglider:reinforced_hang_glider"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 5.625d
-			y: -8.0d
-		}
-		{
-			dependencies: ["16A6AE5C770DB83A"]
+			dependencies: ["52AD30F04DD5A812"]
+			dependency_requirement: "all_started"
 			id: "05ABC370D7153350"
-			size: 0.75d
+			shape: "octagon"
+			size: 1.5d
 			tasks: [{
 				id: "6D522B2EF097AA95"
 				item: "gtceu:hv_mixer"
 				type: "item"
 			}]
-			x: 2.25d
-			y: -3.0d
+			x: 3.0d
+			y: -2.0d
 		}
 		{
 			description: [
@@ -1268,12 +1085,6 @@
 			]
 			icon: "gtceu:blue_alloy_ingot"
 			id: "073F59194B479AA3"
-			rewards: [{
-				id: "6DDC52F547CDE852"
-				item: "gtceu:electrotine_dust"
-				random_bonus: 7
-				type: "item"
-			}]
 			shape: "square"
 			size: 1.0d
 			subtitle: "You're blue now... that's my alloy"
@@ -1283,13 +1094,14 @@
 				type: "item"
 			}]
 			title: "Blue Alloy"
-			x: 11.0d
-			y: -6.0d
+			x: -1.5d
+			y: -8.5d
 		}
 		{
 			dependencies: [
 				"5063FDFFBE3E4855"
 				"3568BC9742092FC5"
+				"073F59194B479AA3"
 			]
 			description: [
 				"Your first &5EV&r Circuit gets a unique texture. If you still consider yourself to be in &bMV&r, &ahold off&r on making too many of these, as they won't benefit you right now. We can't stop you from making these if you &djust wanna flex&r on us, though."
@@ -1307,10 +1119,230 @@
 				type: "item"
 			}]
 			title: "First EV Circuits!"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			id: "52AD30F04DD5A812"
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "1AD314A1377F41CD"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			title: "Welcome to HV Chapter"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6958029B5514D4EC"]
+			id: "7E755297E9685374"
+			tasks: [{
+				id: "7B963F86A90057FF"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"3E2F96A02FEF12AC"
+				"1E307CD76691C24F"
+				"4AD686D18247315E"
+			]
+			icon_scale: 2.0d
+			id: "3FBDC8552F7D8008"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "76D1CE96C52F9963"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
 			x: 8.0d
-			y: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"05ABC370D7153350"
+				"16B735F9C391D260"
+			]
+			id: "56D337E264A4154F"
+			tasks: [
+				{
+					id: "0FCF38A07889B205"
+					item: "gtceu:rocket_alloy_t1_ingot"
+					type: "item"
+				}
+				{
+					id: "26C409116E4D516C"
+					item: "gtceu:rocket_alloy_t1_dust"
+					type: "item"
+				}
+			]
+			title: "Space Alloy"
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"56D337E264A4154F"
+				"41D32C5178760F47"
+			]
+			id: "1E307CD76691C24F"
+			tasks: [{
+				id: "05AEC4A2F295098C"
+				item: "ad_astra:rocket_nose_cone"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7FA0ACB7F161F378"]
+			id: "4214D5C501C35876"
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "766F3215D322BAAE"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["56D337E264A4154F"]
+			id: "3E2F96A02FEF12AC"
+			tasks: [{
+				id: "433BFEE192C565E8"
+				item: "ad_astra:rocket_fin"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["56D337E264A4154F"]
+			id: "4AD686D18247315E"
+			tasks: [{
+				id: "57D58E699F70DD55"
+				item: "ad_astra:steel_engine"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3FBDC8552F7D8008"]
+			id: "6EF2D4D1C1CC9D3E"
+			tasks: [{
+				id: "0E3E97E93E9F3A3A"
+				item: "gtceu:rocket_fuel_bucket"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6EF2D4D1C1CC9D3E"
+				"6752CC523D38A214"
+				"038B204DAC9C863D"
+			]
+			id: "00A2566109144D7F"
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:moon_globe"
+				id: "39DDB5FE1449E38A"
+				title: "I'm on the Moon"
+				type: "dimension"
+			}]
+			x: 13.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3FBDC8552F7D8008"]
+			description: ["&6Before crossing the last Earth boundary,&r you should be sure to not die when you arrive on the moon.\\n\\nTo do that, you're gonna need a &bfull set of Space Suit&r loaded with &bOxygen&r — and if you're careful, even a &ebackup can&r.\\n\\n&cThe hardest part&r will definitely be the &dPolycaprolactam Fabric&r.\\n\\nYou will need an &cEBF&r and a &6HV&r &eChemical Reactor&r.\\n\\nFrom there, you'll be able to craft it using &aBenzene&r, &bHydrogen&r, &9Chlorine&r, &bOxygen&r and &3Ammonia&r.\\n\\nWe won't tell you every step, but you should be able to figure it out yourself through &aEMI&r now that you're a fierce Gregtech player.\\n\\nOnce everything is ready, to fill your space suit and can, simply &eRight-Click&r a drum or tank filled with &bOxygen&r."]
+			id: "038B204DAC9C863D"
+			tasks: [
+				{
+					id: "2BB34BBE18F6816F"
+					item: {
+						Count: 1
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6BC9CD7F95F51E5F"
+					item: {
+						Count: 1
+						id: "ad_astra:space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1BB8E9880CCE403D"
+					item: {
+						Count: 1
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B02A73CDA83B147"
+					item: {
+						Count: 1
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "08B8FBA74D69C0C7"
+					item: {
+						Count: 1
+						id: "ad_astra_giselle_addon:oxygen_can"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3FBDC8552F7D8008"]
+			id: "6752CC523D38A214"
+			tasks: [{
+				id: "4451763FB0D75C2D"
+				item: "ad_astra:launch_pad"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.0d
 		}
 	]
-	subtitle: ["Scale up your power and begin advanced chemistry"]
-	title: "&6HV&r - High Voltage"
+	subtitle: ["{quests.high_voltage.subtitle}"]
+	title: "{quests.high_voltage}"
 }
