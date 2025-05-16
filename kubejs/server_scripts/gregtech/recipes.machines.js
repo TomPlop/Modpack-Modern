@@ -767,7 +767,7 @@ function registerGTCEuMachineRecipes(event) {
 		.EUt(16)
 		.circuit(5)
 
-	// Steam multi parts
+	//#region Steam multi parts
 
 	event.shaped('gtceu:steel_machine_casing', [
 		' A ',
@@ -788,6 +788,8 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#forge:small_fluid_pipes/steel'
 	}).id('gtceu:shaped/steam_hatch')
 
+	//#endregion
+
 	event.replaceOutput({ id: 'gtceu:macerator/macerate_steel_machine_casing'}, 'gtceu:steel_dust', '4x gtceu:steel_dust')
 	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steel_machine_casing'}, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
 
@@ -798,4 +800,35 @@ function registerGTCEuMachineRecipes(event) {
 
 	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_hatch'}, 'gtceu:steel_dust', '6x gtceu:steel_dust')
 	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_hatch'}, 'gtceu:steel_block', '6x gtceu:steel_ingot')
+
+	//#region Large Solar Pannel
+
+	event.shaped(
+    'gtceu:large_solar_panel',
+    ['AWA', 'WZW', 'AWA'],
+    {
+        A: 'ad_astra:solar_panel',
+        W: '#gtceu:circuits/hv',
+        Z: 'gtceu:clean_machine_casing'
+    }
+	).id('gtceu:shaped/large_solar_panel')
+
+	// Test
+
+	function Solar(id, input, EU, circuit) {{
+          {
+        event.recipes.gtceu.large_solar_panel(id)
+            .circuit(circuit)
+            .notConsumable(InputItem.of(input))
+            .duration(200)
+			//.daytime(false)
+			.dimension('ad_astra:moon')
+            .EUt(-EU)
+          }
+}}
+	// T1
+		Solar('solar_t1_1', '4x ad_astra:solar_panel', 4*GTValues.V[GTValues.ULV], 1)
+		Solar('solar_t1_4', '16x ad_astra:solar_panel', 16*GTValues.V[GTValues.ULV], 4)
+		Solar('solar_t1_16', '64x ad_astra:solar_panel', 64*GTValues.V[GTValues.ULV], 16)
+	
 }

@@ -252,4 +252,35 @@ const registerGTCEuMachines = (event) => {
 		)
 	//#endregion
 
+	//#region Large Solar Pannel - From Sky of Grind for the code thanks a lot
+
+	    event.create('large_solar_panel', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .generator(true)
+        .recipeType('large_solar_panel')
+        .noRecipeModifier()
+        .appearanceBlock(GTBlocks.MACHINE_CASING_HV)
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('PLP', 'PLP', 'CCC', 'RRR', 'OTO')
+            .aisle('LCL', 'L L', 'CGC', 'RGR', 'TOT')
+            .aisle('PXP', 'PLP', 'CCC', 'RRR', 'OTO')
+            .where('X', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('R', Predicates.blocks('gtceu:cleanroom_glass'))
+            .where('O', Predicates.blocks('minecraft:blue_stained_glass'))
+            .where('T', Predicates.blocks('minecraft:light_blue_stained_glass'))
+            .where('C', Predicates.blocks('gtceu:clean_machine_casing'))
+			.where('G', Predicates.blocks('ad_astra:glowing_iron_pillar'))
+			.where('P', Predicates.blocks('ad_astra:iron_panel'))			
+			.where('L', Predicates.blocks('ad_astra:iron_plating')
+            .or(Predicates.abilities(PartAbility.OUTPUT_ENERGY))
+            .or(Predicates.blocks('gtceu:ulv_input_bus'))
+            )
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+            .build()
+        )
+        .workableCasingRenderer(
+			'ad_astra:block/iron_plating',
+			'gtceu:block/multiblock/hpca', true)
+
 }
