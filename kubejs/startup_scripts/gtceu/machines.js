@@ -448,7 +448,7 @@ const registerGTCEuMachines = (event) => {
 			'gtceu:block/multiblock/distillation_tower')
 
 	// Extraterrestrial Ore Fabricator
-
+/*
 	event.create('ostrum_linear_accelerator', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('ostrum_linear_accelerator')
@@ -501,5 +501,5 @@ const registerGTCEuMachines = (event) => {
 		.workableCasingModel(
 			'tfg:block/casings/machine_casing_mars',
 			'gtceu:block/machines/thermal_centrifuge')
-
+*/
 }
