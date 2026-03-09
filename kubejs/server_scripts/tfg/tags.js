@@ -129,17 +129,12 @@ const registerTFGBlockTags = (event) => {
 	registerTFGVenusBlockTags(event)
 	registerTFGAquaponicsBlockTags(event)
 
-	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_large')
-	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_small')
-	event.add('minecraft:mineable/pickaxe', 'tfg:electromagnetic_accelerator')
-	event.add('minecraft:mineable/pickaxe', 'tfg:reflector')
-	event.add('minecraft:mineable/pickaxe', 'tfg:machine_casing_aluminium_plated_steel')
-	event.add('forge:mineable/wrench', 'tfg:superconductor_coil_large')
-	event.add('forge:mineable/wrench', 'tfg:superconductor_coil_small')
-	event.add('forge:mineable/wrench', 'tfg:electromagnetic_accelerator')
-	event.add('forge:mineable/wrench', 'tfg:reflector')
-	event.add('forge:mineable/wrench', 'tfg:machine_casing_aluminium_plated_steel')
-	event.add('forge:mineable/wrench', 'tfg:machine_casing_power_casing')
+	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:superconductor_coil_large')
+	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:superconductor_coil_small')
+	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:electromagnetic_accelerator')
+	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:reflector')
+	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:machine_casing_aluminium_plated_steel')
+	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:machine_casing_power_casing')
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
 	event.add('minecraft:ice', 'tfg:mars_ice')
@@ -260,4 +255,8 @@ const registerTFGEntityTypeTags = (event) => {
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:axolotl_pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:hammerhead_pet_enderman')
 
+	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
+	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
+	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
+	event.add('tfc:land_prey', 'tfg:leopard_seal')
 }
